@@ -29,7 +29,8 @@ dat/ic_examples.dat  dat/pp_examples.dat dat/gammagamma_examples.dat dat/gammaga
 	$(FORTRAN) -O2 $(UTILS) $(PROCESSES) myparameters.f90 setup.f90 module_pp.f90 nonthermal_emission.f90 -o nonthermal_emission.out
 	./nonthermal_emission.out
 
-dat/table_input.tex dat/physical_conditions.dat dat/physical_conditions_unform.dat dat/protons.dat dat/electrons.dat dat/electrons_examples.dat dat/protons_examples.dat: $(MODULES) myparameters.f90 setup.f90 nonthermal_particles.f90 $(OPTICAL_DATA) 
+dat/table_input.tex dat/physical_conditions.dat dat/physical_conditions_unform.dat dat/protons.dat dat/electrons.dat dat/electrons_examples.dat dat/protons_examples.dat: $(MODULES) myparameters.f90 setup.f90 nonthermal_particles.f90 $(OPTICAL_DATA)
+	mkdir -p dat/
 	$(FORTRAN) -O2 $(UTILS) $(PROCESSES) myparameters.f90 setup.f90 nonthermal_particles.f90 -o nonthermal_particles.out
 	./nonthermal_particles.out
 
