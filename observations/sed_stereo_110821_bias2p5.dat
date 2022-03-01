@@ -1,0 +1,16 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: e_ref, unit: TeV, datatype: float64}
+# - {name: e_min, unit: TeV, datatype: float64}
+# - {name: e_max, unit: TeV, datatype: float64}
+# - {name: dnde, unit: 1 / (cm2 TeV s), datatype: float64}
+# - {name: dnde_err, unit: 1 / (cm2 TeV s), datatype: float64}
+# - {name: dnde_ul, unit: 1 / (cm2 TeV s), datatype: float64}
+# - {name: is_ul, datatype: bool}
+# schema: astropy-2.0
+e_ref e_min e_max dnde dnde_err dnde_ul is_ul
+0.2456 0.2115 0.2853 1.688e-10 3.296e-11 2.4033509858604534e-10 False
+0.3572 0.2853 0.4472 3.266e-11 8.965e-12 5.2150029471663354e-11 False
+0.5195 0.4472 0.6034 1.112e-11 4.525e-12 2.1437745019883722e-11 False
+1.1840 0.6034 2.3232 8.718e-17 5.057e-15 3.0713761055925604e-13 True
